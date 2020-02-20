@@ -89,7 +89,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid grey;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -181,6 +180,12 @@ header div {
   width: 42.15%;
   height: 10vh;
 }
+@media (max-width: 500px) {
+  header div {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -209,20 +214,60 @@ header nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -236,6 +281,14 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -245,9 +298,25 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 .home .content-pick .destination .btn {
   background-color: #17A2B8;

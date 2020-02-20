@@ -6,19 +6,43 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          flex-wrap: nowrap;
+      }
       }
     }
   }
@@ -26,6 +50,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+      width: 100%;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +71,12 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
 
     img {
       border-radius: 10px;
@@ -52,10 +88,23 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
       .btn {
         .button(@button-bg);
       }
